@@ -18,10 +18,10 @@ class Settings:
             "EMAIL": None,
             "PASSWORD": None,
             "OWNER": None,
-            "PREFIXES": [],
+            "PREFIXES": [?],
             "default": {"ADMIN_ROLE": "Transistor",
                         "MOD_ROLE": "Process",
-                        "PREFIXES": []}
+                        "PREFIXES": [?]}
                         }
         self._memory_only = False
 
@@ -128,7 +128,7 @@ class Settings:
         del self.bot_settings["ADMIN_ROLE"]
         self.bot_settings["default"] = {"MOD_ROLE": mod,
                                         "ADMIN_ROLE": admin,
-                                        "PREFIXES": []
+                                        "PREFIXES": [?]
                                         }
         self.save_settings()
 
